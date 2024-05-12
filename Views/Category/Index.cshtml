@@ -1,0 +1,22 @@
+﻿@* @model List<Chapterverse.Models.Category> *@
+@model List<Category>
+<h1>Category List</h1>
+<table class="mt-5 text-center table table-bordered table-striped">
+   <thead>
+    <tr>
+        <th>Serial No.</th>
+        <th>Category Name</th>
+        <th>Display Order</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td>@obj.Id</td>
+                <td>@obj.Name</td>
+                <td>@obj.DisplayOrder</td>
+            </tr>
+        }
+    </tbody>
+</table>
