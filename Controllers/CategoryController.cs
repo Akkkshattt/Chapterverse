@@ -17,5 +17,9 @@ namespace Chapterverse.Controllers
             List<Category> categObj = _chapterVerseDbContext.Categories.ToList();
             return View(categObj);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
